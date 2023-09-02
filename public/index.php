@@ -1,96 +1,32 @@
 <?php
+// Obtém a URL da página atual
+$current_url = $_SERVER['REQUEST_URI'];
 
-if ($_SERVER['REQUEST_METHOD'] ==="POST"){
-
-    header("location: des.php");
-
-exit();
+// Verifica se a página não encontrada não é a página "index.php"
+if ($current_url != '/index.php') {
+    // Redireciona para a página "index.php"
+    header("Location: /index.php");
+    exit;
 }
-
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redicrecionamento de pagina php</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Doct</title>
+    <link rel="stylesheet" href="/in.css">
 </head>
+
 <body>
 
-<div class="head">
-    <ul>
-        <li>HOME</li>
-        <li>CONTACT</li>
-        <li>HOME</li>
-    </ul>
-</div>
 
 
 
-<div class="contain">
-
-    <div class="card">
-        <img src="/imagens/Meat-PNG-Download-Image.png" alt="">
-    </div>
-
-    <div class="card">
-        <img src="/imagens/Meat-PNG-Download-Image.png" alt="">
-    </div>
-
-    <div class="card">
-        <img src="/imagens/Meat-PNG-Download-Image.png" alt="">
-    </div>
-
-    <div class="card">
-        <img src="/imagens/Meat-PNG-Download-Image.png" alt="">
-    </div>
-
-
-</div>
-
-
-
-<div class="contain">
-
-    <div class="card">
-        <img src="/imagens/Meat-PNG-Download-Image.png" alt="">
-    </div>
-
-    <div class="card">
-        <img src="/imagens/Meat-PNG-Download-Image.png" alt="">
-    </div>
-
-    <div class="card">
-        <img src="/imagens/Meat-PNG-Download-Image.png" alt="">
-    </div>
-
-    <div class="card">
-        <img src="/imagens/Meat-PNG-Download-Image.png" alt="">
-    </div>
-
-
-</div>
-
-<form action="" method="post">
-    <label for="">name
-        <input type="text" name="" id="">
-    </label>
-
-    <label for="">aplido
-        <input type="text" name="" id="">
-    </label>
-
-<button type="submit">seno</button>
-
-
-</form>
-
-
-
-
-
+<img src="/imagens/Meat-PNG-Download-Image.png" alt="">
+<img src="/imagens/Meat-PNG-Download-Image.png" alt="">
 
 
 
